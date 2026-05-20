@@ -1,0 +1,165 @@
+/* Hacker Multi-Color Core Theme - Designed for Legend M Ali */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    background-color: #030303;
+    color: #00ff00;
+    overflow-x: hidden;
+    background-image: linear-gradient(rgba(0, 15, 0, 0.3) 50%, rgba(0, 0, 0, 0.5) 50%), 
+                      linear-gradient(90deg, rgba(255, 0, 0, 0.03), rgba(0, 0, 255, 0.03), rgba(0, 255, 0, 0.03));
+    background-size: 100% 4px, 6px 100%;
+}
+
+/* Color Coding Styles */
+.txt-green { color: #00ff00; text-shadow: 0 0 5px #00ff00; }
+.txt-red { color: #ff0033; text-shadow: 0 0 5px #ff0033; }
+.txt-blue { color: #00ccff; text-shadow: 0 0 5px #00ccff; }
+.txt-yellow { color: #ffff00; text-shadow: 0 0 5px #ffff00; }
+
+.container {
+    max-width: 750px;
+    margin: 40px auto;
+    padding: 25px;
+    border: 2px solid #00ccff;
+    box-shadow: 0 0 25px rgba(0, 204, 255, 0.2);
+    background: rgba(5, 5, 10, 0.9);
+    position: relative;
+    border-radius: 8px;
+}
+
+/* Navbar & Dropdown Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ff0033;
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+}
+
+.menu-container {
+    position: relative;
+    display: inline-block;
+}
+
+.three-dots-btn {
+    background: none;
+    border: none;
+    color: #00ccff;
+    font-size: 1.4rem;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 35px;
+    background: #0a0a14;
+    border: 1px solid #00ccff;
+    box-shadow: 0 0 15px rgba(0, 204, 255, 0.4);
+    width: 260px;
+    z-index: 100;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.dropdown-menu.show {
+    display: block;
+}
+
+.menu-header {
+    font-size: 0.85rem;
+    border-bottom: 1px solid #333;
+    padding-bottom: 5px;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+.info-item {
+    font-size: 0.85rem;
+    margin: 8px 0;
+}
+
+.title-banner {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Interactive Input Elements */
+.terminal-input-box {
+    text-align: center;
+    margin: 30px 0;
+    padding: 15px;
+    border: 1px dashed #333;
+}
+
+.hacker-input {
+    background: #000;
+    border: 1px solid #00ff00;
+    padding: 12px;
+    color: #ffff00;
+    font-size: 1.2rem;
+    width: 80%;
+    text-align: center;
+    outline: none;
+    letter-spacing: 2px;
+}
+
+.fire-btn {
+    background: linear-gradient(45deg, #ff0033, #990000);
+    color: #fff;
+    border: 1px solid #ff0033;
+    padding: 14px 20px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 80%;
+    transition: 0.3s;
+}
+
+.fire-btn:hover {
+    background: linear-gradient(45deg, #00ff00, #006600);
+    border-color: #00ff00;
+    color: #000;
+}
+
+/* Terminal Area */
+.terminal-screen {
+    background: #000;
+    border: 1px solid #ff0033;
+    height: 320px;
+    padding: 15px;
+    overflow-y: auto;
+    display: none;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.log-row {
+    font-size: 0.9rem;
+}
+
+.footer-action {
+    margin-top: 35px;
+    text-align: center;
+    border-top: 1px solid #333;
+    padding-top: 20px;
+}
+
+.wa-master-btn {
+    display: inline-block;
+    background: #25D366;
+    color: #000;
+    text-decoration: none;
+    padding: 12px 30px;
+    font-weight: bold;
+    border-radius: 4px;
+}
